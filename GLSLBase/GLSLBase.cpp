@@ -26,8 +26,8 @@ void RenderScene(void)
 	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 
 	// Renderer Test
-	g_Renderer->Test();
-
+	// g_Renderer->Test();
+	g_Renderer->Particle();
 	glutSwapBuffers();
 }
 
@@ -53,6 +53,7 @@ void SpecialKeyInput(int key, int x, int y)
 
 int main(int argc, char **argv)
 {
+	// srand(time(NULL));
 	// Initialize GL things
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DEPTH | GLUT_DOUBLE | GLUT_RGBA);
